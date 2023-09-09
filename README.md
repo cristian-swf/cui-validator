@@ -17,3 +17,10 @@ To run:
 ```shell
 cargo run
 ```
+
+
+Load testing using _autocannon_:
+
+```shell
+autocannon -c 100 -d 5 -p 10 http://127.0.0.1:8000/validate/33034700
+```
