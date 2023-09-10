@@ -1,0 +1,21 @@
+[debug]
+address = "127.0.0.1"
+port = 8000
+workers = 16
+keep_alive = 1
+read_timeout = 1
+write_timeout = 1
+log = "normal"
+max_blocking = 5000
+limits = { forms = 32768 }
+
+[release]
+address = "127.0.0.1"
+port = 8000
+workers = 16
+keep_alive = 1
+read_timeout = 1
+write_timeout = 1
+log = "normal"
+max_blocking = 5000
+limits = { forms = 32768 }

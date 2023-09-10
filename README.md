@@ -11,16 +11,24 @@ In Romania, a Company Identification Number (CUI), known as "Cod Unic de Înregi
 
 The CUI is a combination of digits, and its format may change over time due to regulatory updates. At the moment of writing this API, the CUI consists of 7 to 10 digits. This unique number helps the government and other relevant authorities track and identify businesses for tax, legal, and administrative purposes.
 
-Example of CUI: 1353728
+Example of CUI: 33034700
 
 To run:
 ```shell
 cargo run
 ```
 
+Build for production:
+```shell
+cargo build -r
+```
+
+To run tests:
+```shell
+cargo test
+```
 
 Load testing using _autocannon_:
-
 ```shell
 autocannon -c 100 -d 5 -p 10 http://127.0.0.1:8000/validate/33034700
 ```
